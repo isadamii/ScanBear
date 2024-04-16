@@ -12,6 +12,7 @@ def scan_port(target, port):
         if result == 0:
             print("Port {} is open!".format(port))
         s.close()
+
     except KeyboardInterrupt:
         print("Exiting, See you later!")
         sys.exit()
@@ -22,7 +23,8 @@ def scan_port(target, port):
 def main():
     f = Figlet(font='big')
     print(f.renderText('ScanBear'))
-    print("A Multi Thread Port Scanner.")
+    print("         A Multi Thread Port Scanner.")
+    print("     Developed by isadami | dsc.gg/isadami")
     print("")
     print("[TARGET IP ADDRESS/DOMAIN]")
     target = input(">> ")
